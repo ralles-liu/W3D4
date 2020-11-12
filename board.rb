@@ -28,7 +28,7 @@ class Board
 
   def []=(pos, value)
     x, y = pos
-    tile = grid[x][y]
+    tile = self[pos]
     tile.value = value
   end
 
