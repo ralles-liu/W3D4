@@ -29,6 +29,8 @@ class Board
   def []=(pos, value)
     x, y = pos
     tile = grid[x][y]
+    # grid at x,y is some Tile instance
+    # therefore tile is equal to this Tile instance
     tile.value = value
   end
 
